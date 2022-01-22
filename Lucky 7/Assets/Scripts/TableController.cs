@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum GameState { Playing, Won, Lost }
+
 public class TableController : MonoBehaviour
 {
     [SerializeField] CardController card1;
@@ -15,13 +17,29 @@ public class TableController : MonoBehaviour
     [SerializeField] Dealer dealer;
 
     CardController nextCard;
-    bool firstCardWasFlipped = false;
+    bool firstCardWasFlipped;
+    GameState gameState;
 
     void Start()
     {
+        firstCardWasFlipped = false;
+        gameState = GameState.Playing;
+
         LockAllCards();
         dealer.Shuffle();
         UnlockAllCards();
+    }
+
+    void Update()
+    {
+        if (gameState == GameState.Won)
+        {
+            Debug.Log("Won");
+        }
+        else if (gameState == GameState.Lost)
+        {
+            Debug.Log("Lost");
+        }
     }
 
     public void LockAllCards()
@@ -72,6 +90,18 @@ public class TableController : MonoBehaviour
                 nextCard = card7;
                 break;
         }
+
+        if (nextCard.IsFlipped)
+        {
+            if (AllCardsAreFlipped())
+            {
+                gameState = GameState.Won;
+            }
+            else
+            {
+                gameState = GameState.Lost;
+            }
+        }
     }
 
     public void UnlockNextCard()
@@ -83,7 +113,7 @@ public class TableController : MonoBehaviour
     {
         if (card1.IsFlipped)
         {
-
+            
         }
         else
         {
@@ -237,6 +267,18 @@ public class TableController : MonoBehaviour
                 firstCardWasFlipped = true;
             }
             UnlockNextCard();
+        }
+    }
+
+    bool AllCardsAreFlipped()
+    {
+        if (card1.IsFlipped && card2.IsFlipped && card3.IsFlipped && card4.IsFlipped && card5.IsFlipped && card6.IsFlipped && card7.IsFlipped)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

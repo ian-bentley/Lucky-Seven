@@ -7,6 +7,7 @@ public class CardController : MonoBehaviour
 {
     [SerializeField] Card card;
     [SerializeField] Image image;
+    [SerializeField] AudioSource audioSource;
 
     bool isFlipped;
 
@@ -30,6 +31,7 @@ public class CardController : MonoBehaviour
     public void Flip()
     {
         image.sprite = card.FaceImage;
+        audioSource.Play();
         isFlipped = true;
     }
 }
