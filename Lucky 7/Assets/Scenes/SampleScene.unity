@@ -389,6 +389,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1762137803}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectCard4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TableController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5654915452572701197, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
       propertyPath: m_Name
       value: Card 4
@@ -506,6 +530,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1762137803}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectCard3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TableController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5654915452572701197, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
       propertyPath: m_Name
       value: Card 3
@@ -611,6 +659,30 @@ PrefabInstance:
     - target: {fileID: 1930938391229792327, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1762137803}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectCard5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5654915452572701197, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
       propertyPath: m_Name
@@ -751,6 +823,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1762137803}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectCard6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TableController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5654915452572701197, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
       propertyPath: m_Name
       value: Card 6
@@ -773,6 +869,8 @@ GameObject:
   - component: {fileID: 1762137799}
   - component: {fileID: 1762137801}
   - component: {fileID: 1762137800}
+  - component: {fileID: 1762137803}
+  - component: {fileID: 1762137802}
   m_Layer: 5
   m_Name: Table
   m_TagString: Untagged
@@ -837,6 +935,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762137798}
   m_CullTransparentMesh: 1
+--- !u!114 &1762137802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762137798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42fe7814856e48c4fa4b5bc34f529615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oneCard: {fileID: 11400000, guid: 97f07f6f7e1d6b44ebbe958f452a11e3, type: 2}
+  twoCard: {fileID: 11400000, guid: 5dfd7e4610ca93a42bf2b6dfba8c4c10, type: 2}
+  threeCard: {fileID: 11400000, guid: 43553f7c20f31454a8aef89b92baf672, type: 2}
+  fourCard: {fileID: 11400000, guid: ef03b7969f9e43b4cb97118d622c58b0, type: 2}
+  fiveCard: {fileID: 11400000, guid: c198cfcb8793b1949a79a3870f081fb8, type: 2}
+  sixCard: {fileID: 11400000, guid: 211f58dc3c834844583701e0b7b24927, type: 2}
+  sevenCard: {fileID: 11400000, guid: fe8fd1c89d98c704089751525673d7cc, type: 2}
+  card1: {fileID: 590255538}
+  card2: {fileID: 1086436333}
+  card3: {fileID: 1247262302}
+  card4: {fileID: 385531110}
+  card5: {fileID: 800513053}
+  card6: {fileID: 1529240186}
+  card7: {fileID: 1805165329}
+--- !u!114 &1762137803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762137798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5a7c881f0784b43996bd93026a3d0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card1: {fileID: 590255538}
+  card2: {fileID: 1086436333}
+  card3: {fileID: 1247262302}
+  card4: {fileID: 385531110}
+  card5: {fileID: 800513053}
+  card6: {fileID: 1529240186}
+  card7: {fileID: 1805165329}
+  dealer: {fileID: 1762137802}
 --- !u!114 &1805165329 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -5727645919008496386, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
@@ -943,6 +1087,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1762137803}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectCard2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TableController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5654915452572701197, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
       propertyPath: m_Name
       value: Card 2
@@ -966,7 +1134,6 @@ GameObject:
   - component: {fileID: 1969623551}
   - component: {fileID: 1969623550}
   - component: {fileID: 1969623549}
-  - component: {fileID: 1969623553}
   m_Layer: 5
   m_Name: Game Canvas
   m_TagString: Untagged
@@ -1062,32 +1229,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1969623553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969623548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42fe7814856e48c4fa4b5bc34f529615, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  oneCard: {fileID: 11400000, guid: 97f07f6f7e1d6b44ebbe958f452a11e3, type: 2}
-  twoCard: {fileID: 11400000, guid: 5dfd7e4610ca93a42bf2b6dfba8c4c10, type: 2}
-  threeCard: {fileID: 11400000, guid: 43553f7c20f31454a8aef89b92baf672, type: 2}
-  fourCard: {fileID: 11400000, guid: ef03b7969f9e43b4cb97118d622c58b0, type: 2}
-  fiveCard: {fileID: 11400000, guid: c198cfcb8793b1949a79a3870f081fb8, type: 2}
-  sixCard: {fileID: 11400000, guid: 211f58dc3c834844583701e0b7b24927, type: 2}
-  sevenCard: {fileID: 11400000, guid: fe8fd1c89d98c704089751525673d7cc, type: 2}
-  card1: {fileID: 590255538}
-  card2: {fileID: 1086436333}
-  card3: {fileID: 1247262302}
-  card4: {fileID: 385531110}
-  card5: {fileID: 800513053}
-  card6: {fileID: 1529240186}
-  card7: {fileID: 1805165329}
 --- !u!1001 &2046203437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1182,6 +1323,30 @@ PrefabInstance:
     - target: {fileID: 1930938391229792327, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1762137803}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectCard7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5654915452572701197, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
       propertyPath: m_Name
@@ -1288,6 +1453,42 @@ PrefabInstance:
     - target: {fileID: 1930938391229792327, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.7686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.7686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.7686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1762137803}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectCard1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483244529071788445, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5654915452572701197, guid: 02b6363c386ddf04c93fbb5eb9161398, type: 3}
       propertyPath: m_Name

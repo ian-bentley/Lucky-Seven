@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
 public class Card : ScriptableObject
 {
-    public int number;
-    public Sprite faceImage;
+    [SerializeField] int number;
+    [SerializeField] Sprite faceImage;
+
+    public int Number { get => number;}
+    public Sprite FaceImage { get => faceImage; }
 }

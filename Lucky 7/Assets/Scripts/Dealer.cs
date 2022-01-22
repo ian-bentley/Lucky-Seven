@@ -5,25 +5,20 @@ using UnityEngine.UI;
 
 public class Dealer : MonoBehaviour
 {
-    public Card oneCard;
-    public Card twoCard;
-    public Card threeCard;
-    public Card fourCard;
-    public Card fiveCard;
-    public Card sixCard;
-    public Card sevenCard;
-    public CardDisplay card1;
-    public CardDisplay card2;
-    public CardDisplay card3;
-    public CardDisplay card4;
-    public CardDisplay card5;
-    public CardDisplay card6;
-    public CardDisplay card7;
-
-    void Start()
-    {
-        Shuffle();
-    }
+    [SerializeField] Card oneCard;
+    [SerializeField] Card twoCard;
+    [SerializeField] Card threeCard;
+    [SerializeField] Card fourCard;
+    [SerializeField] Card fiveCard;
+    [SerializeField] Card sixCard;
+    [SerializeField] Card sevenCard;
+    [SerializeField] CardController card1;
+    [SerializeField] CardController card2;
+    [SerializeField] CardController card3;
+    [SerializeField] CardController card4;
+    [SerializeField] CardController card5;
+    [SerializeField] CardController card6;
+    [SerializeField] CardController card7;
 
     public void Shuffle()
     {
@@ -37,31 +32,31 @@ public class Dealer : MonoBehaviour
         cardNumbers.Add(7);
 
         int randIndex = Random.Range(0, cardNumbers.Count);
-        card1.card = GetCard(cardNumbers[randIndex]);
+        card1.Card = GetCard(cardNumbers[randIndex]);
         cardNumbers.RemoveAt(randIndex);
 
         randIndex = Random.Range(0, cardNumbers.Count);
-        card2.card = GetCard(cardNumbers[randIndex]);
+        card2.Card = GetCard(cardNumbers[randIndex]);
         cardNumbers.RemoveAt(randIndex);
 
         randIndex = Random.Range(0, cardNumbers.Count);
-        card3.card = GetCard(cardNumbers[randIndex]);
+        card3.Card = GetCard(cardNumbers[randIndex]);
         cardNumbers.RemoveAt(randIndex);
 
         randIndex = Random.Range(0, cardNumbers.Count);
-        card4.card = GetCard(cardNumbers[randIndex]);
+        card4.Card = GetCard(cardNumbers[randIndex]);
         cardNumbers.RemoveAt(randIndex);
 
         randIndex = Random.Range(0, cardNumbers.Count);
-        card5.card = GetCard(cardNumbers[randIndex]);
+        card5.Card = GetCard(cardNumbers[randIndex]);
         cardNumbers.RemoveAt(randIndex);
 
         randIndex = Random.Range(0, cardNumbers.Count);
-        card6.card = GetCard(cardNumbers[randIndex]);
+        card6.Card = GetCard(cardNumbers[randIndex]);
         cardNumbers.RemoveAt(randIndex);
 
         randIndex = Random.Range(0, cardNumbers.Count);
-        card7.card = GetCard(cardNumbers[randIndex]);
+        card7.Card = GetCard(cardNumbers[randIndex]);
         cardNumbers.RemoveAt(randIndex);
     }
 
