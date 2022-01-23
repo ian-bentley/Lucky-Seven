@@ -15,53 +15,50 @@ public class TableController : MonoBehaviour
     [SerializeField] CardController card6;
     [SerializeField] CardController card7;
     [SerializeField] Dealer dealer;
+    [SerializeField] GameOverController gameOverController;
+    [SerializeField] GameObject discardSlot;
 
     CardController nextCard;
     bool firstCardWasFlipped;
     GameState gameState;
+    int discardPileSize;
+
+    public GameState GameState
+    {
+        get => gameState;
+    }
 
     void Start()
     {
         firstCardWasFlipped = false;
         gameState = GameState.Playing;
+        discardPileSize = 0;
 
         LockAllCards();
         dealer.Shuffle();
         UnlockAllCards();
     }
 
-    void Update()
-    {
-        if (gameState == GameState.Won)
-        {
-            Debug.Log("Won");
-        }
-        else if (gameState == GameState.Lost)
-        {
-            Debug.Log("Lost");
-        }
-    }
-
     public void LockAllCards()
     {
-        card1.GetComponent<Button>().interactable = false;
-        card2.GetComponent<Button>().interactable = false;
-        card3.GetComponent<Button>().interactable = false;
-        card4.GetComponent<Button>().interactable = false;
-        card5.GetComponent<Button>().interactable = false;
-        card6.GetComponent<Button>().interactable = false;
-        card7.GetComponent<Button>().interactable = false;
+        card1.IsClickable = false;
+        card2.IsClickable = false;
+        card3.IsClickable = false;
+        card4.IsClickable = false;
+        card5.IsClickable = false;
+        card6.IsClickable = false;
+        card7.IsClickable = false;
     }
 
     public void UnlockAllCards()
     {
-        card1.GetComponent<Button>().interactable = true;
-        card2.GetComponent<Button>().interactable = true;
-        card3.GetComponent<Button>().interactable = true;
-        card4.GetComponent<Button>().interactable = true;
-        card5.GetComponent<Button>().interactable = true;
-        card6.GetComponent<Button>().interactable = true;
-        card7.GetComponent<Button>().interactable = true;
+        card1.IsClickable = true;
+        card2.IsClickable = true;
+        card3.IsClickable = true;
+        card4.IsClickable = true;
+        card5.IsClickable = true;
+        card6.IsClickable = true;
+        card7.IsClickable = true;
     }
 
     public void SetNextCard(int nextCardPosition)
@@ -101,172 +98,32 @@ public class TableController : MonoBehaviour
             {
                 gameState = GameState.Lost;
             }
+            gameOverController.gameObject.SetActive(true);
+        }
+        else
+        {
+            UnlockNextCard();
         }
     }
 
     public void UnlockNextCard()
     {
-        nextCard.GetComponent<Button>().interactable = true;
+        nextCard.IsClickable = true;
     }
-
-    public void SelectCard1()
+    
+    public void SelectCard(CardController selectedCard)
     {
-        if (card1.IsFlipped)
+        selectedCard.Flip();
+        Discard(selectedCard);
+        LockAllCards();
+        if (firstCardWasFlipped)
         {
-            
+            SetNextCard(nextCard.Card.Number);
         }
         else
         {
-            card1.Flip();
-            LockAllCards();
-            if (firstCardWasFlipped)
-            {
-                SetNextCard(nextCard.Card.Number);
-            }
-            else
-            {
-                SetNextCard(card1.Card.Number);
-                firstCardWasFlipped = true;
-            }
-            UnlockNextCard();
-        }
-    }
-
-    public void SelectCard2()
-    {
-        if (card2.IsFlipped)
-        {
-
-        }
-        else
-        {
-            card2.Flip();
-            LockAllCards();
-            if (firstCardWasFlipped)
-            {
-                SetNextCard(nextCard.Card.Number);
-            }
-            else
-            {
-                SetNextCard(card2.Card.Number);
-                firstCardWasFlipped = true;
-            }
-            UnlockNextCard();
-        }
-    }
-
-    public void SelectCard3()
-    {
-        if (card3.IsFlipped)
-        {
-
-        }
-        else
-        {
-            card3.Flip();
-            LockAllCards();
-            if (firstCardWasFlipped)
-            {
-                SetNextCard(nextCard.Card.Number);
-            }
-            else
-            {
-                SetNextCard(card3.Card.Number);
-                firstCardWasFlipped = true;
-            }
-            UnlockNextCard();
-        }
-    }
-
-    public void SelectCard4()
-    {
-        if (card4.IsFlipped)
-        {
-
-        }
-        else
-        {
-            card4.Flip();
-            LockAllCards();
-            if (firstCardWasFlipped)
-            {
-                SetNextCard(nextCard.Card.Number);
-            }
-            else
-            {
-                SetNextCard(card4.Card.Number);
-                firstCardWasFlipped = true;
-            }
-            UnlockNextCard();
-        }
-    }
-
-    public void SelectCard5()
-    {
-        if (card5.IsFlipped)
-        {
-
-        }
-        else
-        {
-            card5.Flip();
-            LockAllCards();
-            if (firstCardWasFlipped)
-            {
-                SetNextCard(nextCard.Card.Number);
-            }
-            else
-            {
-                SetNextCard(card5.Card.Number);
-                firstCardWasFlipped = true;
-            }
-            UnlockNextCard();
-        }
-    }
-
-    public void SelectCard6()
-    {
-        if (card6.IsFlipped)
-        {
-
-        }
-        else
-        {
-            card6.Flip();
-            LockAllCards();
-            if (firstCardWasFlipped)
-            {
-                SetNextCard(nextCard.Card.Number);
-            }
-            else
-            {
-                SetNextCard(card6.Card.Number);
-                firstCardWasFlipped = true;
-            }
-            UnlockNextCard();
-        }
-    }
-
-    public void SelectCard7()
-    {
-        if (card7.IsFlipped)
-        {
-
-        }
-        else
-        {
-            card7.Flip();
-            LockAllCards();
-            if (firstCardWasFlipped)
-            {
-                SetNextCard(nextCard.Card.Number);
-            }
-            else
-            {
-                SetNextCard(card7.Card.Number);
-                firstCardWasFlipped = true;
-            }
-            UnlockNextCard();
+            SetNextCard(selectedCard.Card.Number);
+            firstCardWasFlipped = true;
         }
     }
 
@@ -280,5 +137,12 @@ public class TableController : MonoBehaviour
         {
             return false;
         }
+    }
+
+    void Discard(CardController card)
+    {
+        card.transform.position = discardSlot.transform.position;
+        discardPileSize++;
+        card.GetComponent<SpriteRenderer>().sortingOrder = discardPileSize;
     }
 }
