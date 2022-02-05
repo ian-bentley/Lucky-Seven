@@ -195,9 +195,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   card: {fileID: 0}
-  image: {fileID: 0}
   spriteRenderer: {fileID: 1433187235231694502}
   audioSource: {fileID: 1189222870259473770}
+  tableController: {fileID: 0}
+  backImage: {fileID: 21300000, guid: cd97d8f1d0cca0a4f918734572908d7e, type: 3}
 --- !u!61 &2919618686498896145
 BoxCollider2D:
   m_ObjectHideFlags: 0

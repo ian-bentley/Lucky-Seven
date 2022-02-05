@@ -30,12 +30,18 @@ public class TableController : MonoBehaviour
 
     void Start()
     {
+        StartGame();
+    }
+
+    public void StartGame()
+    {
         firstCardWasFlipped = false;
         gameState = GameState.Playing;
         discardPileSize = 0;
 
+        gameOverController.GetComponent<Canvas>().enabled = false;
         LockAllCards();
-        dealer.Shuffle();
+        StartCoroutine(dealer.SetBoard());
         UnlockAllCards();
     }
 
@@ -98,7 +104,7 @@ public class TableController : MonoBehaviour
             {
                 gameState = GameState.Lost;
             }
-            gameOverController.gameObject.SetActive(true);
+            gameOverController.GameOver();
         }
         else
         {

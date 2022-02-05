@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ReplayButton : MonoBehaviour
 {
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] TableController tableController;
+
     public void Replay()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        audioSource.Play();
+        tableController.StartGame();
     }
 }

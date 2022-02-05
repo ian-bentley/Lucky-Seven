@@ -12,25 +12,32 @@ public class GameOverController : MonoBehaviour
     [SerializeField] AudioClip loseSFX;
     [SerializeField] AudioSource audioSource;
 
-    void Start()
+    public void GameOver()
     {
         winPlaque.enabled = false;
         losePlaque.enabled = false;
-        this.gameObject.SetActive(false);
-    }
-
-    void OnEnable()
-    {
         if (tableController.GameState == GameState.Won)
         {
-            winPlaque.enabled = true;
             audioSource.clip = winSFX;
         }
         else if (tableController.GameState == GameState.Lost)
         {
-            losePlaque.enabled = true;
             audioSource.clip = loseSFX;
         }
         audioSource.Play();
+        Invoke("DisplayGameOverScreen", 1f);
+    }
+
+    void DisplayGameOverScreen()
+    {
+        GetComponent<Canvas>().enabled = true;
+        if (tableController.GameState == GameState.Won)
+        {
+            winPlaque.enabled = true;
+        }
+        else if (tableController.GameState == GameState.Lost)
+        {
+            losePlaque.enabled = true;
+        }
     }
 }

@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class CardController : MonoBehaviour
 {
     [SerializeField] Card card;
-    [SerializeField] Image image;
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] AudioSource audioSource;
     [SerializeField] TableController tableController;
+    [SerializeField] Sprite backImage;
 
     bool isFlipped;
     bool isClickable;
@@ -26,12 +26,6 @@ public class CardController : MonoBehaviour
         set => card = value;
     }
 
-    public Image Image
-    {
-        get => image;
-        set => image = value;
-    }
-
     public bool IsFlipped
     {
         get => isFlipped;
@@ -39,7 +33,6 @@ public class CardController : MonoBehaviour
 
     public void Flip()
     {
-        //image.sprite = card.FaceImage;
         spriteRenderer.sprite = card.FaceImage;
         audioSource.Play();
         isFlipped = true;
@@ -48,5 +41,13 @@ public class CardController : MonoBehaviour
     void OnMouseDown()
     {
         if (isClickable) tableController.SelectCard(this);
+    }
+
+    public void Reset()
+    {
+        isFlipped = false;
+        isClickable = false;
+        card = null;
+        spriteRenderer.sprite = backImage;
     }
 }
