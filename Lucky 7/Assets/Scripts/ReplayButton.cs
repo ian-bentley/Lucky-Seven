@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class ReplayButton : MonoBehaviour
 {
-    [SerializeField] AudioSource audioSource;
     [SerializeField] TableController tableController;
 
-    public void Replay()
+    public void CallReplay()
     {
-        audioSource.Play();
+        StartCoroutine(Replay());
+    }
+
+    IEnumerator Replay()
+    {
+        AudioSource replayButtonAudio = GetComponent<AudioSource>();
+        replayButtonAudio.Play();
+        yield return new WaitUntil(() => replayButtonAudio.isPlaying == false);
         tableController.StartGame();
     }
 }

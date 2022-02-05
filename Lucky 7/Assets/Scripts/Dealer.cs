@@ -30,6 +30,13 @@ public class Dealer : MonoBehaviour
     [SerializeField] AudioSource deckAudio;
     [SerializeField] AudioClip shuffleSFX;
 
+    bool isBoardSet;
+
+    public bool IsBoardSet
+    {
+        get => isBoardSet;
+    }
+
     public IEnumerator SetBoard()
     {
         CreateDeck();
@@ -40,6 +47,8 @@ public class Dealer : MonoBehaviour
 
     void CreateDeck()
     {
+        isBoardSet = false;
+
         card1.Reset();
         card2.Reset();
         card3.Reset();
@@ -47,6 +56,7 @@ public class Dealer : MonoBehaviour
         card5.Reset();
         card6.Reset();
         card7.Reset();
+
         card1.transform.position = deckSlot.transform.position;
         card2.transform.position = deckSlot.transform.position;
         card3.transform.position = deckSlot.transform.position;
@@ -122,6 +132,8 @@ public class Dealer : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         card7.transform.position = card7Slot.transform.position;
         card7.GetComponent<AudioSource>().Play();
+
+        isBoardSet = true;
     }
 
     Card GetCard(int value)

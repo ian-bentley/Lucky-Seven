@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum GameState { Playing, Won, Lost }
+public enum GameState { Dealing, Playing, Won, Lost }
 
 public class TableController : MonoBehaviour
 {
@@ -33,16 +33,29 @@ public class TableController : MonoBehaviour
         StartGame();
     }
 
+    void Update()
+    {
+        switch (gameState)
+        {
+            case GameState.Dealing:
+                if (dealer.IsBoardSet)
+                {
+                    gameState = GameState.Playing;
+                    UnlockAllCards();
+                }
+                break;
+        }
+    }
+
     public void StartGame()
     {
         firstCardWasFlipped = false;
-        gameState = GameState.Playing;
+        gameState = GameState.Dealing;
         discardPileSize = 0;
-
         gameOverController.GetComponent<Canvas>().enabled = false;
+
         LockAllCards();
         StartCoroutine(dealer.SetBoard());
-        UnlockAllCards();
     }
 
     public void LockAllCards()
